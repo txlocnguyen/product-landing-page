@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
     <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
     </style>
@@ -24,8 +26,21 @@
             </ul>
         </nav>
     </header>
+    <section id="intro">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="resources/vid.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">Amazing phone cases, affordable prices</h1>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="hero">
-        <h1 id="slogan">Amazing phone cases, affordable prices</h1>
+        <h1 id="slogan">Subscribe to our newsletter</h1>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input name="email" id="email" type="email" placeholder="Enter your email address" required /><br />
             <input id="submit" type="submit" value="Get Started" class="btn" />
@@ -38,9 +53,7 @@
         <div class="features2">
             <h3>Premium Materials</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Risus nullam eget felis eget nunc lobortis. Risus ultricies tristique nulla
-                aliquet. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Sapien nec sagittis aliquam malesuada
-                bibendum arcu.</p>
+                dolore magna aliqua. </p>
         </div>
         <div class="features3">
             <img src="resources/img2.jpg">
@@ -48,9 +61,7 @@
         <div class="features4">
             <h3>Fast Shipping</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Risus nullam eget felis eget nunc lobortis. Risus ultricies tristique nulla
-                aliquet. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Sapien nec sagittis aliquam malesuada
-                bibendum arcu.</p>
+                dolore magna aliqua. </p>
         </div>
         <div class="features5">
             <img src="resources/img3.jpeg">
@@ -58,9 +69,7 @@
         <div class="features6">
             <h3>Quality Assurance</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Risus nullam eget felis eget nunc lobortis. Risus ultricies tristique nulla
-                aliquet. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Sapien nec sagittis aliquam malesuada
-                bibendum arcu.</p>
+                dolore magna aliqua.</p>
         </div>
     </div>
 
@@ -73,6 +82,7 @@
 
     <div id="pricing">
         <div class="product" id="blue">
+            <div><img src="resources/bluejpg.jpg" /></div>
             <div class="level">Blue Case</div>
             <h2>$14.99</h2>
             <ol>
@@ -85,6 +95,7 @@
         </div>
 
         <div class="product" id="green">
+            <div><img src="resources/red.jpg" /></div>
             <div class="level">Red Case</div>
             <h2>$17.99</h2>
             <ol>
@@ -97,7 +108,8 @@
         </div>
 
         <div class="product" id="red">
-            <div class="level">Blue Case</div>
+            <div><img src="resources/green.jpg" /></div>
+            <div class="level">Green Case</div>
             <h2>$19.99</h2>
             <ol>
                 <li>Lorem ipsum.</li>

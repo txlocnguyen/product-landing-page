@@ -19,6 +19,61 @@ img {
     height: auto;
 }
 
+#intro {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+#intro video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#intro h1 {
+    text-transform: uppercase;
+}
+
+#intro .container {
+    position: relative;
+    z-index: 2;
+}
+
+#intro .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+@media (pointer: coarse) and (hover: none) {
+    intro {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+
+    intro video {
+        display: none;
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -27,7 +82,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 
 #slogan {
@@ -98,6 +153,7 @@ header {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     align-items: center;
+    margin-top: 75px;
 }
 
 #features img {
@@ -154,14 +210,12 @@ header {
     padding: 50px;
     border-width: 3px;
     border-style: solid;
-    border-image: 
-      linear-gradient(
-        to bottom, 
-        red, 
-        rgba(0, 0, 0, 0)
-      ) 1 100%;
-      text-align: center;
-  }
+    border-image:
+        linear-gradient(to bottom,
+            red,
+            rgba(0, 0, 0, 0)) 1 100%;
+    text-align: center;
+}
 
 .product>.level {
     color: black;
@@ -201,6 +255,15 @@ header {
 @media (max-width: 800px) {
     #pricing {
         flex-direction: column;
+        align-items: center;
+    }
+
+    #features {
+        display: flex;
+    }
+
+    #features img {
+        display: none;
     }
 
     .product {
@@ -209,4 +272,17 @@ header {
         margin: 0 auto;
         margin-bottom: 10px;
     }
+
+    #company-name {
+        position: absolute;
+        font-size: 0.75rem;
+    }
+
+    header {
+        position: static;
+    }
+}
+
+#pricing img {
+    width: 50%;
 }
