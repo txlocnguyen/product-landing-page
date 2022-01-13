@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
     <link href="style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+    </style>
 </head>
+
 <body>
-    <h1>Test</h1>
+    <header id="header">
+        <img src="resources/logo.jpg" alt="company logo" />
+        <h3 id="company-name">Handmake iPhone Case</h3>
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="#features">Features</a></li>
+                <li class="nav-link"><a href="#how-it-works">How it works</a></li>
+                <li class="nav-link"><a href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="slogan">Amazing phone cases, affordable prices</h1>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+        <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+    <div id="features">
+
+    </div>
+
+    <div id="how-it-works">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MNBsx9UFMOE?controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div id="pricing">
+        <div class="product" id="blue">
+            <div class="level">Blue Case</div>
+            <h2>$14.99</h2>
+            <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+
+        <div class="product" id="green">
+            <div class="level">Red Case</div>
+            <h2>$17.99</h2>
+            <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+
+        <div class="product" id="red">
+            <div class="level">Blue Case</div>
+            <h2>$19.99</h2>
+            <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+    </div>
 </body>
+
 </html>
